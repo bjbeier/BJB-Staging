@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Insights | BJ Beier</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Fonts & CSS (Same as Index) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#0f172a',
+                            accent: '#38bdf8',
+                            terminal: '#22c55e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-slate-300 font-sans antialiased selection:bg-brand-accent selection:text-white">
+
+    <!-- Navigation (Simple Blog Header) -->
+    <header class="bg-brand-dark/90 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="font-mono text-xl font-bold text-white tracking-tighter hover:text-brand-accent transition-colors">
+                <span class="text-brand-accent">&lt;</span>BJ.Beier<span class="text-brand-accent">/&gt;</span>
+            </a>
+            <h1 class="text-3xl font-extrabold text-white hidden sm:block">Digital Insights</h1>
+            <a href="index.html" class="text-slate-400 hover:text-brand-accent transition-colors flex items-center">
+                <i data-lucide="home" class="w-5 h-5 mr-1"></i> Back to Main
+            </a>
+        </div>
+    </header>
+
+    <!-- Blog Post List -->
+    <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
+        <h2 class="text-4xl font-extrabold text-white mb-10 text-center">Latest Articles</h2>
+
+        <!-- Post 1: My Journey into Linux and Docker -->
+        <article id="linux-docker" class="glass-card p-8 rounded-2xl hover:border-brand-accent/30 transition-colors">
+            <header class="mb-6">
+                <div class="flex items-center gap-4 text-sm text-slate-500 font-mono mb-2">
+                    <span class="text-brand-accent">Jan 16, 2019</span>
+                    <span>#Linux #Docker #Homelab</span>
+                </div>
+                <h2 class="text-2xl md:text-3xl font-bold text-white hover:text-brand-accent transition-colors">
+                    <a href="posts/linux-docker-journey.html" class="block">My Journey into Linux and Docker: From Windows Fanboy to Open-Source Enthusiast</a>
+                </h2>
+            </header>
+            <div class="prose prose-invert max-w-none text-slate-300 leading-relaxed space-y-4">
+                <p>
+                    For years, I was a die-hard Windows user, but a personal project led me down the rabbit hole of Linux. This post chronicles my shift, the challenges of learning the command line, and how Docker revolutionized my approach to hosting and development, eventually becoming a cornerstone of my personal and professional infrastructure.
+                </p>
+            </div>
+            <div class="mt-6">
+                <a href="posts/linux-docker-journey.html" class="inline-flex items-center text-brand-accent hover:underline font-medium">
+                    Read Full Article
+                    <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                </a>
+            </div>
+        </article>
+
+        <!-- Post 2: Navigating Change as a Leader -->
+        <article id="navigating-change" class="glass-card p-8 rounded-2xl hover:border-brand-accent/30 transition-colors opacity-70 cursor-not-allowed">
+            <header class="mb-6">
+                <div class="flex items-center gap-4 text-sm text-slate-500 font-mono mb-2">
+                    <span class="text-brand-accent">Feb 21, 2019</span>
+                    <span>#Leadership #Management</span>
+                </div>
+                <h2 class="text-2xl md:text-3xl font-bold text-white">Navigating Change as a Leader: Transparency Wins</h2>
+            </header>
+            <div class="prose prose-invert max-w-none text-slate-300 leading-relaxed space-y-4">
+                <p>
+                    In the fast-paced world of technology and business, change is the only constant. This article focuses on the importance of transparency, empathy, and clear communication when leading a team through significant organizational or technological transitions. (Full content coming soon)
+                </p>
+            </div>
+            <!-- No link for unwritten posts -->
+        </article>
+
+        <!-- Post 3: Be Your Best Self – Show Your Best Self -->
+        <article id="best-self" class="glass-card p-8 rounded-2xl hover:border-brand-accent/30 transition-colors opacity-70 cursor-not-allowed">
+            <header class="mb-6">
+                <div class="flex items-center gap-4 text-sm text-slate-500 font-mono mb-2">
+                    <span class="text-brand-accent">Dec 1, 2018</span>
+                    <span>#Career #Leadership</span>
+                </div>
+                <h2 class="text-2xl md:text-3xl font-bold text-white">Be Your Best Self – Show Your Best Self</h2>
+            </header>
+            <div class="prose prose-invert max-w-none text-slate-300 leading-relaxed space-y-4">
+                <p>
+                    This post is a follow up to “Be Your Best Self – Tips For Any Employee”. Navigating the corporate ladder while staying true to your skills is a balancing act. The core takeaway? Authenticity wins. Don't hide your "geek" side—leverage it as your unique advantage. (Full content coming soon)
+                </p>
+            </div>
+            <!-- No link for unwritten posts -->
+        </article>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-8 border-t border-slate-800 text-slate-500 text-sm">
+        <p>&copy; 2025 BJ Beier. Insights by BJ.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
