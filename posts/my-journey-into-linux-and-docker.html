@@ -18,7 +18,7 @@
 
 
 
-    <!-- Fonts & CSS -->
+    <!-- Fonts -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -26,7 +26,11 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    
+
+    <!-- Tailwind CSS + Typography Plugin (Loaded ONCE) -->
+
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
 
     <script src="https://unpkg.com/lucide@latest"></script>
 
@@ -60,61 +64,15 @@
 
                         }
 
-                    },
-
-                    typography: (theme) => ({
-
-                        invert: {
-
-                            css: {
-
-                                '--tw-prose-body': theme('colors.slate.300'),
-
-                                '--tw-prose-headings': theme('colors.white'),
-
-                                '--tw-prose-links': theme('colors.brand.accent'),
-
-                                '--tw-prose-bold': theme('colors.white'),
-
-                                '--tw-prose-quotes': theme('colors.slate.300'),
-
-                                '--tw-prose-code': theme('colors.brand.terminal'),
-
-                            },
-
-                        },
-
-                    }),
+                    }
 
                 }
 
-            },
-
-            plugins: [
-
-                function({ addBase, theme }) {
-
-                    addBase({
-
-                        'h1': { fontSize: theme('fontSize.3xl') },
-
-                        'h2': { fontSize: theme('fontSize.2xl') },
-
-                        'h3': { fontSize: theme('fontSize.xl') },
-
-                    })
-
-                }
-
-            ]
+            }
 
         }
 
     </script>
-
-    <!-- Tailwind Typography Plugin for clean prose -->
-
-    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
 
     
 
@@ -162,7 +120,7 @@
 
 
 
-    <!-- Post Content -->
+    <!-- Post Content Container -->
 
     <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 
@@ -188,7 +146,7 @@
 
                 </div>
 
-                <h1 class="text-3xl md:text-5xl font-extrabold text-white leading-tight">
+                <h1 class="text-3xl md:text-5xl font-extrabold text-white leading-tight mb-2">
 
                     My Journey into Linux and Docker
 
@@ -200,7 +158,7 @@
 
             <!-- Content -->
 
-            <div class="prose prose-invert prose-lg max-w-none text-slate-300">
+            <div class="prose prose-invert max-w-none text-slate-300 leading-relaxed space-y-6">
 
                 <p>Working in tech for half of my life and tinkering in tech for almost all of it, I've dabbled in a little bit of everything. Working in Help Desk and learning corporate IT to managing multiple systems as a Systems Admin up to oversight at an executive level. My knowledge is always expanding and I'm always trying to learn something new.</p>
 
@@ -226,7 +184,7 @@
 
 
 
-                <p>I've learned so much in such a short time that I simply can't believe only a few years ago I was tinkering with a single Raspberry Pi in the basement. I've found so many great tech folks out there on YouTube sharing tons of great knowledge. <a href="https://www.jeffgeerling.com/">Jeff Geerling</a>, <a href="https://technotim.live/">Techno Tim</a>, <a href="https://networkchuck.com/">Network Chuck</a>, and <a href="https://christianlempa.start.page/">Christian Lempa</a> are just a few of the many out there. If you have any interest in learning anything tech related, do yourself a favor and give them a look. As I continue on my journey, I'm excited at the thought of all the other things I'm going to uncover and learn.</p>
+                <p>I've learned so much in such a short time that I simply can't believe only a few years ago I was tinkering with a single Raspberry Pi in the basement. I've found so many great tech folks out there on YouTube sharing tons of great knowledge. <a href="https://www.jeffgeerling.com/" class="text-brand-accent hover:underline">Jeff Geerling</a>, <a href="https://technotim.live/" class="text-brand-accent hover:underline">Techno Tim</a>, <a href="https://networkchuck.com/" class="text-brand-accent hover:underline">Network Chuck</a>, and <a href="https://christianlempa.start.page/" class="text-brand-accent hover:underline">Christian Lempa</a> are just a few of the many out there. If you have any interest in learning anything tech related, do yourself a favor and give them a look. As I continue on my journey, I'm excited at the thought of all the other things I'm going to uncover and learn.</p>
 
             </div>
 

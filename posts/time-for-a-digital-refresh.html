@@ -18,7 +18,7 @@
 
 
 
-    <!-- Fonts & CSS -->
+    <!-- Fonts -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -26,7 +26,11 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    
+
+    <!-- Tailwind CSS + Typography Plugin (Loaded ONCE) -->
+
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
 
     <script src="https://unpkg.com/lucide@latest"></script>
 
@@ -60,61 +64,15 @@
 
                         }
 
-                    },
-
-                    typography: (theme) => ({
-
-                        invert: {
-
-                            css: {
-
-                                '--tw-prose-body': theme('colors.slate.300'),
-
-                                '--tw-prose-headings': theme('colors.white'),
-
-                                '--tw-prose-links': theme('colors.brand.accent'),
-
-                                '--tw-prose-bold': theme('colors.white'),
-
-                                '--tw-prose-quotes': theme('colors.slate.300'),
-
-                                '--tw-prose-code': theme('colors.brand.terminal'),
-
-                            },
-
-                        },
-
-                    }),
+                    }
 
                 }
 
-            },
-
-            plugins: [
-
-                function({ addBase, theme }) {
-
-                    addBase({
-
-                        'h1': { fontSize: theme('fontSize.3xl') },
-
-                        'h2': { fontSize: theme('fontSize.2xl') },
-
-                        'h3': { fontSize: theme('fontSize.xl') },
-
-                    })
-
-                }
-
-            ]
+            }
 
         }
 
     </script>
-
-    <!-- Tailwind Typography Plugin -->
-
-    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
 
     
 
@@ -162,7 +120,7 @@
 
 
 
-    <!-- Post Content -->
+    <!-- Post Content Container -->
 
     <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 
@@ -188,7 +146,7 @@
 
                 </div>
 
-                <h1 class="text-3xl md:text-5xl font-extrabold text-white leading-tight">
+                <h1 class="text-3xl md:text-5xl font-extrabold text-white leading-tight mb-2">
 
                     Time For A Digital Refresh
 
@@ -200,7 +158,7 @@
 
             <!-- Content -->
 
-            <div class="prose prose-invert prose-lg max-w-none text-slate-300">
+            <div class="prose prose-invert max-w-none text-slate-300 leading-relaxed space-y-6">
 
                 <p>A number of years ago, I purchased my own domain name, bjbeieronline.com. It was the first, but surely not the last. At the time I had no idea what I was going to do with it, but it was a big step in my digital life. I now had my own personalized spot on the internet. Don't get me wrong, I've had a place in the internet for some time now with Facebook, Twitter, LinkedIn, and even the once ubiquitous MySpace (just Google it kids), but this was truly mine. I'm mean, it literally had my name on it.</p>
 
